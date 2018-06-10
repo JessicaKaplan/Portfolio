@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+
+            font-size: 1em;
+            font-style: normal;
+            font-family: "Rubik", sans-serif;
+            line-height: normal;
+            text-align: left;
+    color: black;
+}
+
+h1{
+            font-size: 2em;
+            font-style: normal;
+            font-family: "Rubik", sans-serif;
+            line-height: normal;
+            text-align: left;
+            color: black;
+
+}
+
+h2{         font-size: 1em;
+            font-style: normal;
+            font-family: "Rubik", sans-serif;
+            line-height: normal;
+            text-align: left;
+            color: black;
+    text-decoration: underline;
+}
+img {
+    max-height:  100%;
+    max-width:  100%;
+    display: inline-grid;
+            }
+
+p {
+    text-align: left;
+
+}
+figcaption {text-align: center;}
+.navbar {
+
+    grid-column: 1/22;
+    grid-row: 1;
+    text-align: center;
+    display: inline-grid;
+
+
+}
+.footer { grid-row: 20/22;
+    grid-column: 1/22;
+    background-color: lightgray;
+    text-align: center;
+}
+
+nav {
+    background-color: #fad7d3;
+}
+button{ padding: 0.25em;
+        border: 0.25em;
+        border-style:outset;
+        border-color: lightgray;
+        font-size: 1em;
+
+}
+
+
+
+/*name animation*/
+
+ .myName{
+            stroke: black;
+            stroke-width: 1px;
+            width: 100%;
+            fill: #fad7d3;
+            stroke-dasharray: 1;
+            stroke-dashoffset:1;
+            height: 100%;
+
+        }
+
+        .draw {
+            animation: drawL 1s forwards;
+        }
+        @keyframes drawL {
+            to{ stroke-dashoffset:0;}
+        }
+
+/*portfolio page*/
+
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+li { padding: 1em;
+    display: inline-block;
+
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+
+
+}
+
+nav a:hover{ text-decoration: underline;
+            color: #F97566;
+}
+/*
+.theme1 { background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    grid-row: 4/8;
+    grid-column: 5/9;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    transition: background-color 1s, ease-in 1s;
+    color: white;
+    opacity: 1;
+    text-align: center;
+   display: inline-block;
+    border-radius: 30%;
+    opacity:0.95;
+    cursor: pointer;
+
+
+}
+.theme1:hover {
+     background-color: #fad7d3;
+    width: 120%;
+    height: 120%;
+
+    opacity: 1;
+    display: inline-block;
+    border-radius: 0%;
+
+
+
+}
+
+
+.theme2 {background-color: #f9eded;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    grid-column: 8/12;
+    grid-row: 7/11;
+    font-size: 2em;
+    transition: background-image 1s, ease-in 1s;
+    color: white;
+    border-radius: 30%;
+    opacity:0.95;
+    cursor: pointer;
+
+    text-align: center;
+}
+
+.theme2:hover {
+     background-color:#fad7d3 ;
+            width: 120%;
+            height: 120%;
+            font-size: 2em;
+
+    opacity: 1;
+            border-radius: 0%;
+}
+
+.theme3 {background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    grid-column: 11/15;
+    grid-row: 4/8;
+    font-size: 2em;
+    transition: background-image 1s, ease-in 1s;
+    border-radius: 30%;
+    opacity:0.95;
+    cursor: pointer;
+    text-align: center;
+}
+
+.theme3:hover {
+     background-color: #fad7d3;
+
+            width: 120%;
+            height: 120%;
+            font-size: 2em;
+            border-radius: 0%;
+    opacity: 1;
+}
+
+.theme4 {background-color: #f9eded;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    grid-column: 14/18;
+    grid-row: 7/11;
+    font-size: 2em;
+    transition: background-image 1s, ease-in 1s;
+    border-radius: 30%;
+    opacity:0.95;
+    cursor: pointer;
+
+    text-align: center;
+}
+
+.theme4:hover {
+     background-color: #fad7d3;
+
+            width: 120%;
+            height: 120%;
+            font-size: 2em;
+            border-radius: 0%;
+        opacity:1;
+}
+*/
+
+/*GRIDS*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr) auto;
+    grid-template-rows: repeat(20, 1fr) auto;
+
+    grid-gap: 10px;
+    justify-content: center;
+
+}
+/* about me page*/
+.header-page { grid-column: 11/20;
+    grid-row: 2/4;
+    display: inline-grid;
+}
+.aboutmebanner{
+
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    grid-column: 1/10;
+    grid-row: 2/4;
+    font-size: 2em;
+
+
+}
+.aboutme-text {
+    grid-column: 7/16;
+    grid-row: 13/19;
+    display: inline-grid;
+
+}
+.aboutme-img {
+    grid-column: 8/16;
+    grid-row: 5/12;
+    width: 100%;
+    height: 100%;
+   display: inline-grid;
+}
+/*homepage*/
+.header-index {
+    grid-column: 3/17;
+    grid-row: 2/9;
+    display: inline-grid;
+
+}
+.hp-text{
+    grid-column: 7/19;
+    grid-row: 10/11;
+    display: inline-grid;
+}
+
+/*basic web page*/
+.banner1 {
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    grid-column: 1/10;
+    grid-row: 2/4;
+    font-size: 2em;
+}
+.project1-text {
+    grid-column: 3/11;
+    grid-row: 5/10;
+}
+.project1-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#F97566;
+}
+.project1fig {
+    grid-column: 13/17;
+    grid-row: 5/11;
+    box-shadow: 0.5em 0.5em 0.25em lightgray;
+
+}
+.project2-text {
+    grid-column: 12/20;
+    grid-row: 12/18;
+}
+.project2-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F97566;
+}
+.project2fig {
+   grid-column: 3/9;
+    grid-row: 12/17;
+    box-shadow: 0.5em 0.5em 0.25em lightgray;
+}
+
+
+
+/*basic content page*/
+.banner2 {
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    grid-column: 1/10;
+    grid-row: 2/4;
+    font-size: 2em;
+
+}
+.project3-text {
+    grid-column: 3/11;
+    grid-row: 5/12;
+}
+.project3-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#F97566;
+}
+.list1 {
+
+    text-decoration: none;
+    list-style-type:circle;
+    display:list-item;
+    padding: 0.25em;
+    margin-left: 1em;
+
+}
+.project4-text {
+    grid-column: 12/20;
+    grid-row: 5/12;
+}
+.project4-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F97566;
+}
+
+/*basic animation page*/
+.banner3 {
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    grid-column: 1/10;
+    grid-row: 2/4;
+    font-size: 2em;
+
+}
+.project5-text {
+    grid-column: 3/11;
+    grid-row: 5/10;
+}
+.project5-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#F97566;
+}
+
+.project6-text {
+    grid-column: 12/20;
+    grid-row: 5/10;
+}
+.project6-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F97566;
+}
+.project7-text {
+    grid-column: 3/11;
+    grid-row: 10/14;
+}
+.project7-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F97566;
+}
+
+.project8-text {
+    grid-column: 12/20;
+    grid-row: 10/14;
+}
+.project8-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F97566;
+}
+
+.project9-text {
+    grid-column: 3/11;
+    grid-row: 15/20;
+}
+.project9-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F97566;
+}
+.BA-image {
+       grid-column: 12/20;
+    grid-row: 15/20;
+}
+/* basic UX page*/
+
+
+.topbanner {
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    grid-column: 1/10;
+    grid-row: 2/4;
+    font-size: 2em;
+
+}
+.project10-text {
+    grid-column: 3/11;
+    grid-row: 5/12;
+}
+.project10-text a{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#F97566;
+}
+.BMC {grid-column: 12/20;
+grid-row: 5/10;}
+
+/*mobile version*/
+
+@media only screen and (max-width: 30em){
+
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr) auto;
+    grid-template-rows: repeat(20, 1fr) auto;
+        width: 100%;
+    grid-gap: 10px;
+    justify-content: center;
+        word-break: break-all;
+}
+body {
+    background-color: white;
+
+            font-size: 1em;
+            font-style: normal;
+            font-family: "Rubik", sans-serif;
+            line-height: normal;
+            text-align: left;
+    color: black;
+}
+
+h1{
+            font-size: 2em;
+            font-style: normal;
+            font-family: "Rubik", sans-serif;
+            line-height: normal;
+            text-align: left;
+            color: black;
+
+}
+
+h2{         font-size: 1em;
+            font-style: normal;
+            font-family: "Rubik", sans-serif;
+            line-height: normal;
+            text-align: left;
+            color: black;
+    text-decoration: underline;
+}
+img {
+    max-height:  100%;
+    max-width:  100%;
+    display: inline-grid;
+            }
+
+p {
+    text-align: left;
+
+}
+figcaption {text-align: center;}
+.navbar {
+
+    grid-column: 1/12;
+    grid-row: 1/2;
+    text-align: center;
+    display: inline-grid;
+
+
+}
+.footer { grid-row: 20/22;
+    grid-column: 1/12;
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #fad7d3;
+}
+button{ padding: 0.25em;
+        border: 0.25em;
+        border-style:outset;
+        border-color: lightgray;
+        font-size: 1em;
+
+}
+    .header-page{
+    grid-column: 5/10;
+    grid-row: 2/3;
+
+
+    }
+/*web mobile*/
+
+
+    .banner1 {
+
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+}
+.project1-text {
+    grid-column: 2/10;
+    grid-row: 4/8;
+}
+
+.project1fig {
+    grid-column: 2/10;
+    grid-row: 8/13;
+    box-shadow: 0.5em 0.5em 0.25em lightgray;
+
+}
+.project2-text {
+    grid-column: 2/10;
+    grid-row: 13/17;
+}
+
+.project2fig {
+   grid-column: 1/11;
+    grid-row: 17/20;
+    box-shadow: 0.5em 0.5em 0.25em lightgray;
+}
+    /*UX MOBILE*/
+.topbanner {
+    grid-column: 1/5;
+    grid-row: 2/4;
+    }
+
+.project10-text {
+      grid-column: 2/10;
+    grid-row: 4/10;
+}
+.BMC {
+  grid-column: 1/12;
+    grid-row: 10/13;
+    box-shadow: 0.5em 0.5em 0.25em lightgray;
+}
+/*animation mobile*/
+
+
+.banner3 {
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+}
+.project5-text {
+    grid-column: 2/10;
+    grid-row: 4/7;
+}
+
+.project6-text {
+    grid-column: 2/10;
+    grid-row: 7/10;
+}
+
+.project7-text {
+    grid-column: 2/10;
+    grid-row: 10/13;
+}
+
+.project8-text {
+    grid-column: 2/10;
+    grid-row: 13/16;
+}
+
+.project9-text {
+    grid-column: 2/10;
+    grid-row: 16/19;
+}
+
+.BA-image {
+       grid-column: 3/12;
+    grid-row: 19/20;
+}
+/*content mobile*/
+
+    .banner2 {
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+
+}
+.project3-text {
+    grid-column: 2/10;
+    grid-row: 4/9;
+}
+
+
+.project4-text {
+    grid-column: 2/10;
+    grid-row: 10/16;
+}
+/*about me mobile*/
+.aboutmebanner{
+
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+}
+.aboutme-text {
+    grid-column: 2/10;
+    grid-row: 9/13;
+    display: inline-grid;
+
+}
+.aboutme-img {
+ grid-column: 2/10;
+    grid-row: 5/9;
+}
+
+    /*index mobile*/
+    .header-index {
+    grid-column: 1/10;
+    grid-row: 1/5;
+
+}
+.hp-text{
+    grid-column: 2/10;
+    grid-row: 5/7;
+
+}
+}
